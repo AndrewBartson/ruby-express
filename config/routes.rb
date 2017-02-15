@@ -1,4 +1,23 @@
 Rails.application.routes.draw do
+
+  get 'exercises/select'
+  
+  get 'error/you_r_lost'
+
+  root 'error#you_r_lost'
+  
+  # root '404' - doesn't work because no 404_controller.rb
+  # get 'public/404' - doesn't work because no public_controller.rb
+  
+  #  Simple way to access files in public directory ->
+  #    - https://ruby-express-cloudobserver.c9users.io/404
+  #    - just works without controller without routes
+  
+  
+  # default route
+  # going away in future versions
+  # get ':controller(/:action(/:id))'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

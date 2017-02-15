@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+  body {
+    background-color: #EFEFEF;
+    color: #2E2F30;
+    text-align: center;
+    font-family: arial, sans-serif;
+    margin: 0;
+  }
+
+  div.dialog {
+    width: 95%;
+    max-width: 900px;
+    margin: 4em auto 0;
+  }
+
+  div.dialog > div {
+    border: 1px solid #CCC;
+    border-right-color: #999;
+    border-left-color: #999;
+    border-bottom-color: #BBB;
+    background-color: #F7F7F7;
+    padding: 7px 12% 0;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+  }
+  
+  div.dialog > div:first-of-type {
+    border-top: #B00100 solid 4px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    background-color: white;
+  }
+
+div.dialog > div:last-of-type {
+    border-bottom-color: #999;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-color: #DADADA;
+    color: #666;
+    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+    background-color: white;
+  }
+
+
+  h1 {
+    font-size: 100%;
+    color: #730E15;
+    line-height: 1.5em;
+  }
+  
+  div.code > p {
+      font-family: courier;
+      text-align: left;
+  }
+
+/*  div.dialog > p {
+    margin: 0 0 1em;
+    padding: 1em;
+*/
+   
+  }
+  </style>
+</head>
+<body>
+  <div class="dialog">
+    <div>
+      <p>Select chapter - 
+        <select name="chapter">
+          <option value="Basics">Basics</option>
+          <option value="Variables">Variables</option>
+          <option value="Methods">Methods</option>
+          <option value="Flow Control">Flow Control</option>
+        </select>
+      </p>
+      <p>Select exercise -
+        <select name="exercise">
+          <option value="Exercise 1">Exercise 1</option>
+          <option value="Exercise 2">Exercise 2</option>
+          <option value="Exercise 3">Exercise 3</option>
+          <option value="Exercise 4">Exercise 4</option>
+        </select>
+      </p>
+      <h1>[name of chapter] - [name of exercise]</h1>
+    </div>
+    <div class="code">
+        <p>Insert code here. Need line breaks inserted</p>
+        <p>1234567890123456789012345678901234567890123456789012345678901234567890</p>
+    </div>
+    <div>
+        <p>Andrew Patrick Bartson - February 2017</p>
+    </div>
+  </div>
+</body>
+</html>
